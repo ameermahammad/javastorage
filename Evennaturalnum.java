@@ -1,0 +1,19 @@
+import java.util.Scanner;
+class Evennaturalnum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter a min number");
+		int a= scan.nextInt();
+		System.out.println("enter a max number");
+		int b= scan.nextInt();
+		for (int c=a;c<=b ;c++ )
+		{
+			if (c%2==0)
+			{
+				System.out.println(c);
+			}
+		}
+	}
+}

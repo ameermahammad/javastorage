@@ -1,0 +1,23 @@
+class Palindrome1to50k 
+{
+	public static void main(String[] args) 
+	{
+		for (int a=1;a<=50000 ;a++ )
+		{
+			int temp=a;
+			int ld=0, reverse=0;
+			int i=a;
+			while (i!=0)
+			{
+				ld=i%10;
+				reverse=reverse*10+ld;
+				i=i/10;
+			}
+			a=temp;
+			if (temp==reverse)
+			{
+				System.out.println(temp);
+			}
+		}
+	}
+}

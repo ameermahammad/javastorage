@@ -1,0 +1,31 @@
+class SumofdigitsRiseCount 
+{
+	public static void main(String[] args) 
+	{
+		int a=345;
+		int count=0;
+		int temp=a;
+		while (a!=0)
+		{
+			count++;
+			a=a/10;
+			
+		}
+		System.out.println(count);
+		a=temp;
+		int sum=0;
+		int ld=0;
+		while (a!=0)
+		{
+			ld=a%10;
+			int exp=1;
+		   for (int i=1;i<=count ;i++ )
+		  {
+		     exp=exp*ld;
+		  }
+         sum=sum+exp;
+		 a=a/10;
+		}
+        System.out.println(sum);
+	}
+}

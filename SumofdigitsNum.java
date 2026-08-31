@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class SumofdigitsNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter a digit");
+		int x=scan.nextInt();
+		int  div, sum=0;
+		for (int a=1;a<=x ;x=x/10)
+		{
+	        div=x%10;
+			sum=sum+div;
+			
+		}
+		System.out.println(sum);
+	}
+}

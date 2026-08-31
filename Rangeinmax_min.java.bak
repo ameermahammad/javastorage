@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Rangeinmax_min 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter minimum range");
+		int a=scan.nextInt();
+		System.out.println("enter maximum range");
+		int b=scan.nextInt();
+		System.out.println("enter your range");
+		int d=scan.nextInt();
+		for ( int c=a;c<=b ;c++ )
+		{
+			System.out.println(c);
+		}
+	}
+}

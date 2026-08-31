@@ -1,0 +1,35 @@
+class Mock4 
+{
+	public static void main(String[] args) 
+	{
+		int star=1;
+		int space=4;
+		
+		for (int a=1;a<=5;a++ )
+		{
+		     for (int c=1;c<=space ;c++ )
+			{
+			 System.out.print("   ");
+			}
+			for (int d=1;d<=star ;d++ )
+			{
+				System.out.print(" * ");
+				int space1=1;
+			
+			for (int b=1;b<=space1 ;b++ )
+			{
+				space1=space1+4;
+			}
+			}
+			if (a<=4)
+			{
+				space--;
+				star=star+2;
+				
+			}
+			
+			System.out.println();
+		}
+	}
+}
+ 

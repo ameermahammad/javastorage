@@ -1,0 +1,13 @@
+class Abc 
+{
+	public static void main(String[] args) 
+	{
+		int a=20,b=30;
+		System.out.println("enter max range");
+		System.out.println("enter min range");
+		for (int i=a; i<=b;i++ )
+		{
+			System.out.println(i);
+		}
+	}
+}

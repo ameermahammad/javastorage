@@ -1,0 +1,48 @@
+
+class Primearmstrongnum 
+{
+	public static void main(String[] args) 
+	{
+	    
+		for (int i=1;i<=100 ;i++ )
+		{
+		int count=0;
+        for (int a=1;a<=i ;a++ )
+        {
+			if (i%a==0)
+			{
+				count++;
+			}
+        }
+		if (count==2)
+		{
+			int temp=i;
+			while (i!=0)
+			{
+				count++;
+				i=i/10;
+			}
+			System.out.println(count);
+			i=temp;
+			int sum=0;
+			int ld=0;
+			while (i!=0)
+			{
+				ld=i%10;
+				int exp=1;
+				for ( int b=1;b<=count ;b++ )
+				{
+					exp=exp*ld;
+				}
+				 sum=sum+exp;
+				 i=i/10;
+			}
+			 i=temp;
+			if (sum==temp)
+			{
+				System.out.println(sum);
+		    }
+		}
+		}
+	}
+}

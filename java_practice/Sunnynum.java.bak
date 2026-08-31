@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Sunnynum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter your number");
+		int n=scan.nextInt();
+		n++;
+		boolean status=false;
+		for(int b=1;b<=n;b++)
+		{
+		for (int a=1;a<b ;a++ )
+		{
+			if (a*a==b)
+			{
+				status=true;
+					break;
+			}
+		}
+		}
+		if (status)
+		{
+			System.out.println(b);
+		}
+		else
+		{
+			System.out.println(" not a sunny number");
+		}
+	}
+}

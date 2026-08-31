@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Orderitem 
+{
+	public static void main(String[] args) 
+	{
+       Scanner scan=new Scanner (System.in);
+		System.out.println("enter item ");
+		int order=scan.nextInt();
+		switch (order)
+		{
+		case 1:System.out.println("chicken biryani");
+		break;
+		case 2:System.out.println("mutton biryani");
+		break;
+		default: System.out.println("enter valid input");
+		}
+	}
+}

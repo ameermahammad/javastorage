@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class Username 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter user name");
+		String user=scan.next();
+		System.out.println("how many times print");
+		int c=scan.nextInt();
+		for ( int b=1;b<=c ;b++ )
+		{
+			System.out.println(b+") ameer");
+		}
+	}
+}

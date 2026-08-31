@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class ProductofNaturalnum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("Enterr min value");
+		int x=scan.nextInt();
+		System.out.println("Enterr max value");
+		int y=scan.nextInt();
+		int product=1;
+		for (int a=x;a<=y ;a++ )
+		{
+			product=product*a;
+            System.out.println("Enterr product value is :" +product);
+		}
+	}
+}

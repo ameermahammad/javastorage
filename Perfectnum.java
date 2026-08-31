@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Perfectnum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter n value");
+		int n=scan.nextInt();
+		int sum=0;
+		for (int a=1;a<n ;a++ )
+		{
+			if (n%a==0)
+			{
+				sum=sum+a;
+			}
+			
+		}
+		if (sum==n)
+		{
+			
+			System.out.println("perfect number");
+		}
+		else
+		{
+			System.out.println("not");
+		}
+        System.out.println(sum);
+		
+	}
+}

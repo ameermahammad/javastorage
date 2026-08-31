@@ -1,0 +1,41 @@
+class  Pattern34
+{
+	public static void main(String[] args) 
+	{
+		int space=0;
+		int star=9;
+		int x=1;
+		for (int i=1;i<=9;i++)
+		{
+			for (int j=1;j<=space;j++)
+			{
+				System.out.print("    ");
+			}
+			
+			for (int a=1;a<=star ;a++ )
+			{
+
+				System.out.print("  "+x+"  ");
+				x=x+2;
+			}
+			if (i<=4)
+			{
+				star=star-2;
+				space++;
+			}
+			else
+			{
+				star=star+2;
+				space--;
+				
+			}
+			System.out.println();
+		
+			
+			
+		}
+		
+	}
+}
+ 
+ 

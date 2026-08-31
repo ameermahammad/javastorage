@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+   <script>
+    function car(brand,model,wheels,engine,speed,color)
+    {
+        var a=` <h1> I like the <b><span style="color:${color}"> ${brand} </span></b>car and 
+            the model is <b><span style="color:${color}">${model}</span></b> very best current and it has
+            <b><span style="color:${color}"> ${wheels} </span></b> wheels
+             the engine name is<b><span style="color:${color}"> ${engine}</span></b>
+        and speed of <b><span style="color:${color}">${speed} </span></b>
+        bhp and i like the color name is <b><span style="color:${color}"> ${color}</span></b></h1>
+         <img src="${brand}${color}">`
+        document.write(a+"<br>")
+    }
+    car("benz","monsoon",4,"v12",500,"blue")
+    car("benz","moon",4,"v19",800,"blue")
+   </script> 
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+import java.util.Scanner;
+class Naturalnum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter user name");
+		String user=scan.next();
+		for ( int b=1;b<=100 ;b++ )
+		{
+			System.out.println(b);
+		}
+	}
+}

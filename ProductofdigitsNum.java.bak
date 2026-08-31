@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class ProductofdigitsNum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter a digit");
+		int x=scan.nextInt();
+		int  div, pro=1;
+		for (int a=1;a<=x;a++ )
+		{
+			div=x%10;
+			pro=pro*div;
+			x=x/10;
+		}
+		System.out.println(pro);
+	}
+}

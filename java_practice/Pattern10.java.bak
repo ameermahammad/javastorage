@@ -1,0 +1,24 @@
+class Pattern10 
+{
+	public static void main(String[] args) 
+	{
+		for (int a=1;a<=5 ;a++ )
+	    {
+		   System.out.println(" "+a+" ");
+	    }
+		System.out.println();
+		for (char b='a';b<='d' ;b++ )
+		{
+          System.out.println(" "+b+" ");
+		}
+		System.out.println();
+		for (int c=0;c<=4 ;c++ )
+	    {
+			if (c%2==0)
+			{
+				System.out.println(" "+c+" ");
+			}
+	    }
+		System.out.println();
+	}
+}

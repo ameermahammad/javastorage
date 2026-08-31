@@ -1,0 +1,35 @@
+class Reversefibonacci 
+{
+	public static void main(String[] args) 
+	{
+		
+			int a=0;
+			int b=1;
+			int sum=0;
+			for (int i=100;i<=1 ;i-- )
+			{
+				System.out.println(sum);
+				a=b;
+				b=sum;
+				sum=a+b;
+			
+			
+			int sum1=0;
+			int pro=1;
+			int ld=0;
+			int temp=sum;
+			int rev=0;
+			while (sum!=0)
+			{
+				ld=sum%10;
+				 rev=rev*10+ld;
+				sum=sum/10;
+			}
+            sum=temp;
+			if (temp==rev)
+			{
+				System.out.println("reverse numbers are "+rev);
+			}
+			}
+	}
+}

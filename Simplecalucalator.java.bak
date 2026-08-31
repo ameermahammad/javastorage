@@ -1,0 +1,124 @@
+import java.util.Scanner;
+class Simplecalucalator
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("welcome to simple calucalator");
+		System.out.println("enter 1 for addition");
+		System.out.println("enter 2 for subtraction");
+		System.out.println("enter 3 for multiplication");
+		System.out.println("enter 4 for division(quetiont)");
+		System.out.println("enter 5 for division(reminder)");
+		System.out.println("enter 6 for check even or odd");
+		System.out.println("enter 7 for check voting or not");
+		System.out.println("enter 8 check ias exam or not");
+		System.out.println("enter your choice");
+		int choice=scan.nextInt();
+		switch(choice)
+		{
+			case 1:
+			{
+				System.out.println("you choose addition");
+				System.out.println("enter a value");
+				int a=scan.nextInt();
+				System.out.println("you b value");
+				int b=scan.nextInt();
+				int c=a+b;
+				System.out.println("result:" +c);
+			}
+			break;
+			case 2:
+			{
+				System.out.println("you choose subtraction");
+				System.out.println("enter a value");
+				int a=scan.nextInt();
+				System.out.println("you b value");
+				int b=scan.nextInt();
+				int c=a-b;
+				System.out.println("result"+c);
+			}
+			break;
+			case 3:
+			{
+				System.out.println("you choose multiplication");
+				System.out.println("enter a value");
+				int a=scan.nextInt();
+				System.out.println("you b value");
+				int b=scan.nextInt();
+				int c=a*b;
+				System.out.println("result"+c);
+			}
+			break;
+			case 4:
+			{
+				System.out.println("you choose division(quetient)");
+				System.out.println("enter a value");
+				int a=scan.nextInt();
+				System.out.println("you b value");
+				int b=scan.nextInt();
+				int c=a/b;
+				System.out.println("result"+c);
+			}
+			break;
+			case 5:
+			{
+				System.out.println("you choose division(reminder)");
+				System.out.println("enter a value");
+				int a=scan.nextInt();
+				System.out.println("you b value");
+				int b=scan.nextInt();
+				int c=a%b;
+				System.out.println("result"+c);
+			}
+			break;
+			case 6:
+			{
+				System.out.println("you choose check even or odd");
+				System.out.println("enter a number");
+				int num=scan.nextInt();
+				if(num%2==0)
+				{
+					System.out.println("even number");
+				}
+				else
+				{
+					System.out.println("odd number");
+				}
+
+			}
+			break;
+			case 7:
+			{
+				System.out.println("you choose check eligible for voting or not");
+				System.out.println("enter your age");
+				int age=scan.nextInt();
+				if(age>=21)
+				{
+					System.out.println("eligible for voting");
+				}
+				else
+				{
+					System.out.println("not eligible for voting");
+				}
+			}
+			break;
+			case 8:
+			{
+				System.out.println("you choose check eligible for ias exam or not");
+				System.out.println("enter your age");
+				int age=scan.nextInt();
+				if(age>=18)
+				{
+					System.out.println("eligible for ias exam");
+				}
+				else
+				{
+					System.out.println("not eligible for ias exam");
+				}
+			}
+			break;
+            default :System.out.println("enter valid input");
+		}
+	}
+}

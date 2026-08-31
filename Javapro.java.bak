@@ -1,0 +1,14 @@
+class Javapro 
+{
+	public static void main(String[] args) 
+	{
+		int x=483363937;
+		int count=0;
+		if (x!=0)
+		{
+			count++;
+			x=x/10;
+		}
+		System.out.println(count);
+	}
+}

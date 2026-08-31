@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Practice2 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter m value");
+		int m=scan.nextInt();
+		System.out.println("enter n value");
+		int n=scan.nextInt();
+		
+		for (int a=m;a<=n ; a++)
+		{
+			int count=0;
+			for (int b=1;b<=a ;b++ )
+			{
+				if (a%b==0)
+				{
+					count++;
+				}
+			}
+				if (count==2)
+				{
+					System.out.println(a);
+				}
+			
+		}
+	}
+}

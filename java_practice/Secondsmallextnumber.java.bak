@@ -1,0 +1,28 @@
+import java.util.Scanner;
+class Secondsmallextnumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a number");
+		int num=scan.nextInt();
+		int small=0;
+		int secondsmall=0;
+		while (num!=0)
+		{
+			int ld=num%10;
+			if (small>ld)
+			{
+				
+				small=ld;
+			}
+			
+			else if (secondsmall>=ld)
+			{
+				secondsmall=ld;
+			}
+			num=num/10;
+			System.out.println(secondsmall);
+		}
+	}
+}

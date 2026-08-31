@@ -1,0 +1,57 @@
+class Pattern2 
+{
+	public static void main(String[] args) 
+	{
+		
+		//for (int i=1;i<=5 ;i++ )
+		{
+			for (int j=5;j>=1 ;j--)
+			{
+				System.out.print(" "+j+" ");
+			}
+			System.out.println();
+			for (int k=1;k<=5;k++ )
+			{
+				int a=2*k;
+				System.out.print(" "+a+ " ");
+			}
+			System.out.println();
+			for (char m='e';m>='a' ;m-- )
+			{
+				System.out.print(" "+m+" ");
+			}
+            System.out.println();
+			int d=5;
+			for (int p=1;p<=5 ;p++ )
+			{
+				int c=d*p;
+				System.out.print(" "+c+" ");
+			}
+			System.out.println();
+			for (int n=1;n<=11 ;n++ )
+			{
+				int count=0;
+				for (int b=1;b<=n ;b++ )
+				{
+					if (n%b==0)
+					{
+						count++;
+					}
+				}
+				if (count==2)
+				{
+					for (int c=1;c<=n ;c++ )
+					{
+						System.out.print(" "+c+" ");
+					}
+				}
+				n++;
+				if (n>=11)
+				{
+					break;
+				}
+				System.out.println();
+			}
+		}
+	}
+}

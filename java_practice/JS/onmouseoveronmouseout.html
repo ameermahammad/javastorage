@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+   <input type="button" value="magic" onmouseover="fun()" onmouseout="nofun()"> 
+   <h1 id="result"></h1>
+   <script>
+    function fun()
+    {
+        document.getElementById("result").innerHTML="no magic"
+    }
+    function nofun()
+    {
+        document.getElementById("result").innerHTML=" "
+    }
+   </script>
+</body>
+</html>

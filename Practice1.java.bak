@@ -1,0 +1,29 @@
+import java.util.Scanner;
+class Practice1 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter m value");
+		int m=scan.nextInt();
+		System.out.println("enter n value");
+		int n=scan.nextInt();
+		
+		for (int a=m;a<=n ;a++)
+		{
+			int sum=0, pro=1, ld=0;
+		   
+			 while (a!=0)
+			 {
+				 ld=a%10;
+			      sum=sum+ld;
+			     pro=pro*ld;
+				 a=a/10;
+			 }
+		if (pro==sum)
+		{
+			System.out.println(a);
+		}
+		}
+	}
+}

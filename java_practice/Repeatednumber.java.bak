@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Repeatednumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("How many numbers you want");
+		int num=scan.nextInt();
+		System.out.println("enter your repeated number");
+		int ld=scan.nextInt();
+		while (num!=0)
+		{
+			int lastdigit=num%10;
+			if (ld==lastdigit)
+			{
+               System.out.println(ld);
+			}
+		}
+	}
+}

@@ -1,0 +1,50 @@
+import java.util.Scanner;
+class Pefectnumpalindromespy
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a number");
+		int num=scan.nextInt();
+		int sum=0;
+		for (int a=1;a<num ;a++ )
+		{
+			if (num%a==0)
+			{
+				sum=sum+a;
+			}
+		}
+		if (sum==num)
+		{
+			int lastdigit=0;
+			int reverse=0;
+			int temp=num;
+			while (num!=0)
+			{
+				lastdigit=num%10;
+				reverse=reverse*10+lastdigit;
+				num=num/10;
+			}
+			num=temp;
+			if (temp==reverse)
+			{
+               int ld=0;
+			   int sum1=0;
+			   int product=1;
+			   int temp1=num;
+			   while (num!=0)
+			   {
+				   ld=num%10;
+				   sum1=sum1+ld;
+				   product=product*ld;
+				   num=num/10;
+			   }
+			   num=temp1;
+			   if (sum1==product)
+			   {
+				   System.out.println("sum1 value is perfect number of a palindrome number of a spy number "+sum1);
+			   }
+			}
+		}
+	}
+}

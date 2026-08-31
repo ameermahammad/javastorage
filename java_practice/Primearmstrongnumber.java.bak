@@ -1,0 +1,40 @@
+import java.util.Scanner;
+class Primearmstrongnumber 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a number");
+		int num=scan.nextInt();
+		int count=0;
+		int temp=num;
+		while (num!=0)
+		{
+			count++;
+			num=num/10;
+		}
+		num=temp;
+		int lastdigit=0;
+		int sum=0;
+		while (num!=0)
+		{
+			lastdigit=num%10;
+			int exp=1;
+			for (int i=1;i<=count ;i++ )
+			{
+                exp=exp*lastdigit;
+			}
+			sum=sum+exp;
+			num=num/10;
+		}
+		num=temp;
+		if (sum==num)
+		{
+			System.out.println("armstrong number "+sum);
+		}
+		else
+		{
+          System.out.println("not a armstrong number "+sum);
+		}
+	}
+}

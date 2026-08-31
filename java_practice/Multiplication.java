@@ -1,0 +1,22 @@
+import java.util.Scanner;
+class Multiplication 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter  m value");
+		int m=scan.nextInt();
+		System.out.println("enter  n value");
+		int n=scan.nextInt();
+		int count=0;
+		for (int i=1;i<=m;i++ )
+		{
+			if (i%n==0)
+			{
+				System.out.println(i);
+				count++;
+			}
+		}
+		System.out.println("count of values are :"+count);
+	}
+}

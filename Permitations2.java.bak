@@ -1,0 +1,21 @@
+import java.util.Scanner;
+class Permitations2
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("enter a selected elements");
+		int n=scan.nextInt();
+		System.out.println("enter a count of  elements");
+		int r=scan.nextInt();
+		int fact=1;
+		for (int a=n;a>=(n-r) ;a-- )
+		{
+			fact=fact*a;
+		}
+		System.out.println(fact);
+		
+		
+		
+	}
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+   <input placeholder="enter the data" id="a">
+   <br><br>
+   <input type="button" value="click here" onclick="fun()"> 
+   <h1 id="b"></h1>
+   <script>
+    function fun() 
+    {
+    var data=document.getElementById("a").value
+    document.getElementById("b").innerHTML=data
+    document.write(data) //if you want work h1 tag then remove printing statement
+    }
+   </script>
+</body>
+</html>

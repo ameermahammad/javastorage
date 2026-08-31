@@ -1,0 +1,49 @@
+class Q1 
+{
+	public static void main(String[] args) 
+	{
+		int star=1;
+		int space=5;
+        int x=2;
+		for (int a=1;a<=4 ;a++ )
+		{
+			for (int b=1;b<=star ;b++ )
+			{
+				System.out.print(" * ");
+			}
+			for (int c=1;c<=space ;c++ )
+			{
+				System.out.print("   ");
+			}
+			for (int d=1;d<=star ;d++ )
+			{
+               System.out.print(" "+x+" ");
+			   while (true)
+			   {
+				   x++;
+				   int count=0;
+				   for (int z=1;z<=x ;z++ )
+				   {
+					   if (x%z==0)
+					   {
+						   count++;
+					   }
+				   }
+				   if (count==2)
+				   {
+					   if (x>9)
+					   {
+						   x=2;
+					   }
+					   break;
+				   }
+			   }
+			}
+			System.out.println("\n");
+			System.out.println();
+			star++;
+			space=space-2;
+			
+		}
+	}
+}

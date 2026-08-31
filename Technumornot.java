@@ -1,0 +1,32 @@
+class Technumornot 
+{
+	public static void main(String[] args) 
+	{
+		int num=3025;
+		int temp=num;
+		int count=0;
+		while (num!=0)
+		{
+			
+			count++;
+			num=num/10;
+		}
+		num=temp;
+		int pro=1;
+		for (int a=1;a<=count/2 ;a++ )
+		{
+			pro=pro*10;
+		}
+		int c=num/pro;
+		int b=num%pro;
+		int n1=b+c;
+		if (n1*n1==num)
+		{
+			System.out.println("tech number");
+		}
+		else
+		{
+         System.out.println(" not a tech number");
+		}
+	}
+}

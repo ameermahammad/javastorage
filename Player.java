@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Player
+	{
+
+    public static void main(String args[]) {
+        Scanner scan = new Scanner(System.in);
+
+        // game loop
+        while (true)
+			{
+            String enemy1 = scan.next(); // name of enemy 1
+            int dist1 = scan.nextInt(); // distance to enemy 1
+            String enemy2 = scan.next(); // name of enemy 2
+            int dist2 = scan.nextInt(); // distance to enemy 2
+
+            // Write an action using System.out.println()
+
+            
+            if (dist1 < dist2) {
+                System.out.println(enemy1);
+            } else {
+                System.out.println(enemy2);
+            }
+
+        }
+    }
+}

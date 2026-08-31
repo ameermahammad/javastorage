@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+</head>
+<body>
+    <input placeholder="enter a data" id="a" oninput="fun()" type="password">
+    <h1 id="result"></h1>
+    <script>
+        function fun()
+        {
+            var a=document.getElementById("a").value
+            document.getElementById("result").innerHTML=a.length
+        }
+    </script>
+</body>
+</html>

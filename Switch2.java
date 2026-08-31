@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Switch2
+
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan = new Scanner(System.in);
+		System.out.println("enter results");
+		char result=scan.next().charAt(0);
+		switch (result)
+		{
+		case 'A':System.out.println("you got 1st rank");
+		break;
+		case 'B':System.out.println("you got 2st rank");
+		break;
+		case 'C':System.out.println("you got 3rd rank");
+		break;
+		case 'D':System.out.println("pass");
+		break;
+		case 'E':System.out.println("you fail");
+		break;
+		default : System.out.println("enter valid input");
+		
+		}
+	}
+}

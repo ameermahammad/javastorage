@@ -1,0 +1,18 @@
+import java.util.Scanner;
+class Sumofgivenrange
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan= new Scanner(System.in);
+		System.out.println("enter min range");
+		int a=scan.nextInt();
+		System.out.println("enter max range");
+		int c=scan.nextInt();
+		int sum=0;
+		for (int b=a; b<=c;b++ )
+		{
+		  sum=sum+b;
+		    System.out.println(sum);	
+		}
+	}
+}

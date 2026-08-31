@@ -1,0 +1,26 @@
+class Vowelprimeornot 
+{
+	public static void main(String[] args) 
+	{
+		char ch='i';
+		if (ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+		{
+			int count=0;
+			for (int c='a';c<=ch ;c++ )
+			{
+				if (ch%c==0)
+				{
+					count++;
+				}
+			}
+			if (count==2)
+			{
+				System.out.println("prime");
+			}
+			else
+			{
+              System.out.println("not prime");
+			}
+		}
+	}
+}

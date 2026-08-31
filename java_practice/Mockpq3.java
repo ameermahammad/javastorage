@@ -1,0 +1,68 @@
+class Mockpq3 
+{
+	public static void main(String[] args) 
+	{
+		char ch1='a';
+		char ch2='s';
+		char ch3='j';
+		char ch4='m';
+		char ch5='o';
+		for (int a=1;a<=5 ;a++ )
+		{
+			for (int b=1;b<=1 ;b++ )
+			{
+				System.out.print(" "+ch1+" ");
+				ch1++;
+			}
+			for (int c=1;c<=1 ;c++ )
+			{
+				if(a==5||c==2)
+				{
+					System.out.print("    ");
+				}
+				else
+				{
+				System.out.print(" "+ch2+" ");
+				ch2++;
+				}
+			}
+			for (int d=1;d<=1 ;d++ )
+			{
+				if(a==4||d==3||a==5||d==3)
+				{
+					System.out.print("    ");
+				}
+				else
+				{
+				System.out.print(" "+ch3+" ");
+				ch3++;
+				}
+			}
+			for (int e=1;e<=1 ;e++ )
+			{
+				if (a==1||e==4||a==2||e==4)
+				{
+					System.out.print(" "+ch4+" ");
+					ch4++;
+				}
+				else
+				{
+					System.out.print("   ");
+				}
+			}
+			for (int f=1;f<=1 ;f++ )
+			{
+				if (a==1||f==5)
+				{
+					System.out.print(" "+ch5+" ");
+					ch5++;
+				}
+				else
+				{
+					System.out.print("   ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

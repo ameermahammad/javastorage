@@ -1,0 +1,32 @@
+class Evenpattern 
+{
+	public static void main(String[] args) 
+	{
+		int i=2;
+		for (int a=1;a<=5 ;a++ )
+		{
+			for (int b=1;b<=5 ;b++ )
+			{
+				if (a>=b)
+				{
+                   
+				   while (i!=0)
+				   {
+					   i++;
+					   if (i%2==0)
+					   {
+						   System.out.println(" * ");
+						   break;
+					   }
+
+				   }
+				}
+				else
+				{
+					System.out.print("   ");
+				}
+			}
+			System.out.println();
+		}
+	}
+}

@@ -1,0 +1,27 @@
+class  Number1
+{
+	public static void main(String[] args) 
+	{
+		long n=2346578234L;
+		long temp=n;
+		int count=0;
+		while(n!=0)
+		{
+			count++;
+			n=n/10;
+		}
+		n=temp;
+		if (count==10)
+		{
+			long ld=0;
+			long rev=0;
+			while (temp!=0)
+			{
+                ld=temp%10;
+				rev=rev*10+ld;
+				temp/=10;
+			}
+			System.out.println(rev);
+		}
+	}
+}

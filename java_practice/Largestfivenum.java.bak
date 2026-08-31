@@ -1,0 +1,17 @@
+import java.util.Scanner;
+class Largestfivenum 
+{
+	public static void main(String[] args) 
+	{
+		Scanner scan=new Scanner(System.in);
+		System.out.println("How many numbers you want");
+		int num=scan.nextInt();
+		int large=0;
+		for (int a=1;a<=num ;a++ )
+		{
+			int n=scan.nextInt();
+			large=large+n;
+		}
+		System.out.println(large);
+	}
+}
